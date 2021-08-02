@@ -1,0 +1,65 @@
+
+// Existing name request
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Riku Rainio",
+    "number": "0504000405"
+}
+
+###
+// New name request
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "New Test",
+    "number": "010 0100010",
+}
+
+###
+// Get persons
+GET http://localhost:3001/api/persons
+
+###
+// Delete "New Test" user by its id
+DELETE http://localhost:3001/api/persons/988
+
+###
+
+PUT http://localhost:3001/api/persons/6106a5d7caabc31fd44dbc01
+Content-Type: application/json
+
+{
+    "name": "ee",
+    "number": "4"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "w",
+    "number": "3"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "erg",
+    "number": "12322245678"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "are",
+    "number": "43214321"
+}
